@@ -1,0 +1,143 @@
+/* Estilos Gerais */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+img {
+	display: block;
+}
+.btn:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+}
+
+/* Header */
+
+nav {
+	position: fixed;
+	width: 100%;
+	background: #222025 !important;
+	padding: 15px 0;
+}
+
+nav {
+	background-color: #222025 !important;
+}
+
+
+.header_menu {
+	text-align: right;
+}
+
+nav ul li a:hover {
+	color: #fa7268;
+    text-decoration: underline;
+}
+
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+}
+
+nav ul.center {
+	
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.place-center {
+	margin-inline: auto;
+}
+
+.carousel-text-size {
+	z-index: 6;
+    font-family: Montserrat;
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    text-align: center;
+    line-height: 65px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    font-size: 65px;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+}
+
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-item{
+	background-color: rgb(61, 56, 56);
+}
+
+.carousel-item img{
+	opacity: 0.5;
+}
+
+.btn-secondary {
+	border-radius: 40px;
+}
+
+.icon-position {
+	float: left;
+	padding-right: 5px;
+}
+
+@media only screen and (min-width: 768px){
+	.carousel-item img {
+		height: 500px;
+	}
+
+	#imgWithoutCarousel {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.carousel-item img {
+		height: 200px;
+	}
+	#carouselExampleIndicators {
+		display: none;
+	}
+
+	#imgWithoutCarousel{
+		background-color: rgb(61, 56, 56);
+	}
+	
+	#imgWithoutCarousel > img{
+		opacity: 0.5;
+	}
+}
